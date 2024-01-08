@@ -193,6 +193,7 @@ export default Arena;*/
 import React,{Component} from 'react';
 import { useEffect } from 'react';
 import { ReactDOM } from 'react';
+import { Web5 } from "@web5/api";
 import Navbar from "./Navbar";
 
 import './Arena1.css'
@@ -277,6 +278,17 @@ function startAuction() {
     document.getElementById("health2").innerHTML = player2.health;
     console.log(player1,player2);
     startTimer(5)
+
+//const { protocols, status } = await web5.dwn.protocols.query({
+   // message: {
+     // filter: {
+       // protocol: 'https://music.org/protocol',
+     // },
+   // },
+ // });
+
+  // logs an array of protocol configurations installed on the user's DWN
+  console.log(protocols);
 	/*let damage1 = player1.attack - player2.defense;
 	let damage2 = player2.attack - player1.defense;
 	let turns1 = Math.ceil(player2.health / damage1);
