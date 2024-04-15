@@ -193,7 +193,6 @@ export default Arena;*/
 import React,{Component} from 'react';
 import { useEffect } from 'react';
 import { ReactDOM } from 'react';
-import { Web5 } from "@web5/api";
 import Navbar from "./Navbar";
 
 import './Arena1.css'
@@ -288,7 +287,7 @@ function startAuction() {
  // });
 
   // logs an array of protocol configurations installed on the user's DWN
-  console.log(protocols);
+  //console.log(protocols);
 	/*let damage1 = player1.attack - player2.defense;
 	let damage2 = player2.attack - player1.defense;
 	let turns1 = Math.ceil(player2.health / damage1);
